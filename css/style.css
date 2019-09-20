@@ -1,0 +1,16 @@
+:root {
+    --gradient-start: #4F00BC;
+    --gradient-end: #29ABE2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gradient-end);
+    background-image: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
+    min-height: 100vh;
+}
