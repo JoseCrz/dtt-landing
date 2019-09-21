@@ -46,11 +46,13 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: -50px;
 }
 
 .slogan {
     font-size: 18px;
     text-align: center;
+    opacity: 0;
 }
 
 .slogan__text {
@@ -59,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .services {
     font-size: 18px;
+    opacity: 0;
 }
 
 .services__text {
@@ -68,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cta__container {
     font-size: 18px;
+    opacity: 0;
 }
 
 .cta {
@@ -83,6 +87,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     transition: .3s all;
     letter-spacing: 1px;
+    animation: jump cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
+    animation-delay: 6s; 
 }
 
 .cta:hover {
@@ -91,6 +97,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .cta:active {
     transform: translateY(5px);
+}
+
+.animation__fade-in {
+    animation: fade-in 1s ease forwards 2.7s;
 }
 
 @keyframes line-animation {
@@ -105,6 +115,30 @@ h1, h2, h3, h4, h5, h6 {
     }
     to {
         fill: white;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes jump {
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
 
