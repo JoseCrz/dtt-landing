@@ -14,8 +14,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--gradient-end);
-    background-image: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
+    background: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
     width: 100%;
     min-height: 100vh;
     font-family: var(--font);
