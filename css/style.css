@@ -27,9 +27,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-.util-flex--center {
+.util__flex-center {
     display: flex;
     justify-content: center;
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logo__container {
