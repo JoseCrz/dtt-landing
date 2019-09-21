@@ -1,6 +1,8 @@
 :root {
     --gradient-start: #4F00BC;
     --gradient-end: #29ABE2;
+    --font: 'Quicksand';
+    --text-color: #fff;
 }
 
 * {
@@ -14,13 +16,39 @@ body {
     background-image: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
     width: 100%;
     min-height: 100vh;
+    font-family: var(--font);
+    font-weight: 300;
+    color: var(--text-color);
 }
 
-.logo-container {
-    min-height: inherit;
+.util--flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo__container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slogan {
+    font-size: 18px;
+}
+
+.slogan__text {
+    font-size: 3rem;
+}
+
+.services {
+    font-size: 18px;
+}
+
+.services__text {
+    margin: 0 10px;
+    font-size: 2rem;
 }
 
 @keyframes line-animation {
