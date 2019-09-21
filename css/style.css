@@ -1,6 +1,8 @@
 :root {
     --gradient-start: #4F00BC;
     --gradient-end: #29ABE2;
+    --accent-color: #57B560;
+    --light-accent-color: #65D26E;
     --font: 'Quicksand';
     --text-color: #fff;
 }
@@ -21,7 +23,11 @@ body {
     color: var(--text-color);
 }
 
-.util--flex-center {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+.util-flex--center {
     display: flex;
     justify-content: center;
 }
@@ -49,6 +55,32 @@ body {
 .services__text {
     margin: 0 10px;
     font-size: 2rem;
+}
+
+.cta__container {
+    font-size: 18px;
+}
+
+.cta {
+    font-size: 2rem;
+    margin-top: 25px;
+    color: var(--text-color);
+    text-decoration: none;
+    background: var(--accent-color);
+    padding: 12px 24px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 0;
+    font-weight: 700;
+    transition: .3s all;
+}
+
+.cta:hover {
+    background: var(--light-accent-color);
+}
+
+.cta:active {
+    transform: translateY(5px);
 }
 
 @keyframes line-animation {
