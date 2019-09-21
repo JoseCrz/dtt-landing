@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slogan {
     font-size: 18px;
+    text-align: center;
 }
 
 .slogan__text {
@@ -107,11 +108,20 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .slogan {
+        font-size: 14px;
+    }
+
+    .services {
+        font-size: 14px;
+    }
+}
+
 /* * iPhone X */
 @media screen and (max-width: 375px) {
     .slogan {
         font-size: 9px;
-        text-align: center;
     }
 
     .slogan__text {
