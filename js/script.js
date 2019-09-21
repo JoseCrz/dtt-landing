@@ -12,12 +12,12 @@ for (let i = 0; i <= logo.length - 1; i++) {
     const cssRule = `.logo path:nth-child(${i+1}) { 
         stroke-dasharray: ${totalLength}; 
         stroke-dashoffset: ${totalLength};
-        animation: line-animation 2s ease forwards ${delay}s;
+        animation: line-animation 2s ease forwards;
      }`
 
     style.sheet.insertRule(cssRule)
     if (i === logo.length-1) {
-        style.sheet.insertRule(`.logo { animation: fill 0.5s ease forwards ${delay+1.5}s; }`)
+        style.sheet.insertRule(`.logo { animation: fill 0.5s ease forwards 2s; }`)
     }
 }
 
