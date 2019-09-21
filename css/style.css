@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slogan__text {
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .services {
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .services__text {
     margin: 0 10px;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .cta__container {
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta {
-    font-size: 2rem;
+    font-size: 2em;
     margin-top: 25px;
     color: var(--text-color);
     text-decoration: none;
