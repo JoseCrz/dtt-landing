@@ -1,172 +1,31 @@
 :root {
-    --gradient-start: #4F00BC;
-    --gradient-end: #29ABE2;
-    --accent-color: #57B560;
-    --light-accent-color: #65D26E;
-    --font: 'Quicksand';
-    --text-color: #fff;
+  --background-color: #fafafa;
+  --primary-color: #005dff;
+  --accent-color: #fff6bb;
+  --font: 'Quicksand'
+;
 }
 
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
-    width: 100%;
-    min-height: 100vh;
-    font-family: var(--font);
-    font-weight: 300;
-    color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  font-family: var(--font);
+  height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+.background {
+  -webkit-clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
+  background: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
-
-.util__flex-center {
-    display: flex;
-    justify-content: center;
-}
-
-.content {
-    min-height: 100vh;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.logo__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: -100px;
-}
-
-.slogan {
-    font-size: 18px;
-    text-align: center;
-    opacity: 0;
-}
-
-.slogan__text {
-    font-size: 3em;
-}
-
-.services {
-    font-size: 18px;
-    opacity: 0;
-}
-
-.services__text {
-    margin: 0 10px;
-    font-size: 2em;
-}
-
-.cta__container {
-    font-size: 18px;
-    opacity: 0;
-}
-
-.cta {
-    font-size: 2em;
-    margin-top: 25px;
-    color: var(--text-color);
-    text-decoration: none;
-    background: var(--accent-color);
-    padding: 12px 24px;
-    text-transform: uppercase;
-    border-radius: 50px;
-    border: 0;
-    font-weight: 700;
-    transition: .3s all;
-    letter-spacing: 1px;
-    animation: jump cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
-    animation-delay: 6s; 
-}
-
-.cta:hover {
-    background: var(--light-accent-color);
-}
-
-.cta:active {
-    transform: translateY(5px);
-}
-
-.animation__fade-in {
-    animation: fade-in 1s ease forwards 2.7s;
-}
-
-@keyframes line-animation {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes fill {
-    from {
-        fill:transparent;
-    }
-    to {
-        fill: white;
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes jump {
-    25% {
-        transform: translateY(-10px);
-    }
-    50% {
-        transform: translateY(0px);
-    }
-    75% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .slogan {
-        font-size: 14px;
-    }
-
-    .services {
-        font-size: 14px;
-    }
-}
-
-/* * iPhone X */
-@media screen and (max-width: 375px) {
-    .slogan {
-        font-size: 9px;
-    }
-
-    .slogan__text {
-        margin-top: -16px;
-    }
-
-    .services {
-        font-size: 9px;
-    }
-
-    .cta {
-        font-size: 1.5em;
-    }
-}
+/*# sourceMappingURL=style.css.map */

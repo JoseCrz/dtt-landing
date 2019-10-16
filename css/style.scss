@@ -1,0 +1,27 @@
+:root {
+    --background-color: #fafafa;
+    --primary-color: #005dff;
+    --accent-color: #fff6bb;
+    --font: 'Quicksand'
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    font-family: var(--font);
+    height: 100vh;
+}
+
+.background {
+    clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
+    background: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
