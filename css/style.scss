@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-    // border: 1px solid red;
+    border: 1px solid red;
     max-width: 1000px;
     padding: 0 15px;
 }
@@ -44,8 +44,29 @@ body {
     padding: 15px;
     margin: 1em auto;
     border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }
 
-@import './components/header.scss';
-@import './components/background.scss';
-@import './components/card.scss';
+.list-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    &__bullet {
+        width: 30px;
+        height: 30px;
+        background: lighten(#005dff, 40%);
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &__text {
+        display: inline-block;
+    }
+}
