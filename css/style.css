@@ -37,4 +37,11 @@ body {
   position: absolute;
   z-index: -1;
 }
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 1em auto;
+  border-radius: 15px;
+}
 /*# sourceMappingURL=style.css.map */

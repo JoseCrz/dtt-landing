@@ -23,6 +23,29 @@ body {
     padding: 0 15px;
 }
 
+.header {
+    &__logo {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.background {
+    clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
+    background: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin: 1em auto;
+    border-radius: 15px;
+}
+
 @import './components/header.scss';
 @import './components/background.scss';
-
+@import './components/card.scss';

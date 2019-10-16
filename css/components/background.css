@@ -1,10 +1,1 @@
-.background {
-  -webkit-clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
-          clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
-  background: var(--primary-color);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-}
-/*# sourceMappingURL=background.css.map */
+/* No CSS *//*# sourceMappingURL=background.css.map */
