@@ -2,8 +2,7 @@
   --background-color: #fafafa;
   --primary-color: #005dff;
   --accent-color: #fff6bb;
-  --font: 'Quicksand'
-;
+  --font: 'Quicksand';
 }
 
 * {
@@ -17,6 +16,16 @@ body {
   background: var(--background-color);
   font-family: var(--font);
   height: 100vh;
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding: 0 15px;
+}
+
+.header__logo {
+  color: white;
+  text-decoration: none;
 }
 
 .background {

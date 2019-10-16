@@ -2,7 +2,7 @@
     --background-color: #fafafa;
     --primary-color: #005dff;
     --accent-color: #fff6bb;
-    --font: 'Quicksand'
+    --font: 'Quicksand';
 }
 
 * {
@@ -17,11 +17,12 @@ body {
     height: 100vh;
 }
 
-.background {
-    clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
-    background: var(--primary-color);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+.wrapper {
+    // border: 1px solid red;
+    max-width: 1000px;
+    padding: 0 15px;
 }
+
+@import './components/header.scss';
+@import './components/background.scss';
+
