@@ -5,6 +5,12 @@
     --font: 'Quicksand';
 }
 
+@mixin desktop-screen {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -21,6 +27,21 @@ body {
     // border: 1px solid red;
     max-width: 1000px;
     padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.background {
+    clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+    background: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    
+    @include desktop-screen {
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+    }
 }
 
 .header {
@@ -30,13 +51,13 @@ body {
     }
 }
 
-.background {
-    clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
-    background: var(--primary-color);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+.content {
+    @include desktop-screen {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "primary card";
+        height: 100vh;
+    }
 }
 
 .card {
@@ -46,6 +67,12 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
 
+    @include desktop-screen {
+        grid-area: card;
+        height: fit-content;
+        align-self: center;
+        margin: 1em;
+    }
     &__list {
         list-style: none;
         margin: 0;
@@ -75,9 +102,22 @@ body {
 .primary {
     color: white;
     text-align: center;
+    
+    @include desktop-screen {
+        grid-area: primary;
+        text-align: left;
+        align-self: center;
+    }
+
     &__title {
         font-size: 3em;
         text-transform: uppercase;
+
+        @include desktop-screen {
+            font-size: 4em;
+            line-height: .9em;
+            margin: 10px 0;
+        }
     }
 
     &__text {
@@ -96,5 +136,9 @@ body {
         padding: 12px 24px;
         letter-spacing: 1px;
         font-weight: bold;
+
+       @include desktop-screen {
+           display: inline-block;
+       } 
     }
 }
