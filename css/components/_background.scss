@@ -1,0 +1,12 @@
+.background {
+    clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+    background: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    
+    @include desktop-screen {
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+    }
+}

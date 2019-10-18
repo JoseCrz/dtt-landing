@@ -1,0 +1,43 @@
+.primary {
+    color: white;
+    text-align: center;
+    
+    @include desktop-screen {
+        grid-area: primary;
+        text-align: left;
+        align-self: center;
+    }
+
+    &__title {
+        font-size: 3em;
+        text-transform: uppercase;
+
+        @include desktop-screen {
+            font-size: 4em;
+            line-height: .9em;
+            margin: 10px 0;
+        }
+    }
+
+    &__text {
+        font-size: 1.4em;
+    }
+
+    &__cta {
+        font-size: 1.5em;
+        color: darken( #005dff, 40%);
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: var(--accent-color);
+        display: block;
+        padding: 12px 24px;
+        letter-spacing: 1px;
+        font-weight: bold;
+
+       @include desktop-screen {
+           display: inline-block;
+       } 
+    }
+}
