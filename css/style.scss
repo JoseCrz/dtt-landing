@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-    border: 1px solid red;
+    // border: 1px solid red;
     max-width: 1000px;
     padding: 0 15px;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .background {
-    clip-path: polygon(100% 0, 100% 53%, 42% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
     background: var(--primary-color);
     height: 100%;
     width: 100%;
@@ -68,5 +68,33 @@ body {
 
     &__text {
         display: inline-block;
+        font-weight: normal;
+    }
+}
+
+.primary {
+    color: white;
+    text-align: center;
+    &__title {
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 1.4em;
+    }
+
+    &__cta {
+        font-size: 1.5em;
+        color: darken( #005dff, 40%);
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: var(--accent-color);
+        display: block;
+        padding: 12px 24px;
+        letter-spacing: 1px;
+        font-weight: bold;
     }
 }
