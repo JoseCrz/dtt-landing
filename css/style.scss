@@ -1,8 +1,9 @@
 :root {
-    --background-color: #fafafa;
-    --primary-color: #005dff;
-    --accent-color: #fff6bb;
-    --font: 'Quicksand';
+    --light-color: #fafafa;
+    --primary-color: rgba(255, 57, 35, 0.856);
+    --secondary-color: #202D88;
+    --accent-color: #ffd31d;
+    --font: 'lato';
 }
 
 @mixin desktop-screen {
@@ -38,8 +39,8 @@ body {
 .content {
     @include desktop-screen {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         grid-template-areas: "primary card";
-        height: 100vh;
+        height: 80vh;
     }
 }
