@@ -1,9 +1,11 @@
 :root {
-    --light-color: #fafafa;
+    --light-color: #F6F6F6;
     --primary-color: rgba(255, 57, 35, 0.856);
     --secondary-color: #202D88;
-    --accent-color: #ffd31d;
-    --font: 'lato';
+    --accent-color: #DE5A5A;
+    --bg-color: #1E1E1E;
+    --bg-color-secondary: #272727;
+    --font: 'Poppins';
 }
 
 @mixin desktop-screen {
@@ -39,8 +41,13 @@ body {
 .content {
     @include desktop-screen {
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "primary card";
         height: 80vh;
     }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }

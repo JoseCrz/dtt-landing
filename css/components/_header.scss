@@ -5,10 +5,16 @@
     align-items: center;
 
     &__logo {
-        color: white;
+        color: var(--accent-color);
         text-decoration: none;
-        font-size: 2em;
-        font-family: oswald, sans serif;
-        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.6em;
+        font-family: Poppins;
+        font-weight: 300;
+
+        .logo--strong {
+            letter-spacing: -5px;
+            font-weight: 800;
+        }
     }
 }

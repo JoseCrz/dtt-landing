@@ -4,34 +4,46 @@
     
     @include desktop-screen {
         grid-area: primary;
-        text-align: left;
+        text-align: center;
         align-self: center;
     }
 
     &__title {
-        font-size: 3em;
+        font-size: 2em;
+        font-weight: 400;
+        line-height: .5em;
 
         @include desktop-screen {
-            font-size: 4em;
+            font-size: 5.1em;
             line-height: 1em;
             margin: 10px 0;
         }
+
+        .title-opacity {
+            color: rgba(246, 246, 246, 0.05);
+            }
     }
 
     &__text {
-        font-size: 1.4em;
+        font-size: .8em;
         margin: 30px 0px;
         line-height: 1.3em;
+        color: #636363;
+        margin-bottom: 60px;
+
+        @include desktop-screen {
+            font-size: 1.1em;
+        }
     }
 
     &__cta {
         font-size: 1em;
         color: var(--light-color);
-        border-radius: 15px;
+        border-radius: 0px 15px 15px 15px;
         text-decoration: none;
         font-weight: bold;
         text-transform: uppercase;
-        background: var(--secondary-color);
+        border: 2px solid var(--accent-color);
         display: block;
         padding: 15px 60px;
         letter-spacing: 1px;

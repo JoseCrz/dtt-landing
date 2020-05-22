@@ -1,11 +1,8 @@
 .background {
-    background: var(--primary-color);
-    height: 90%;
+    background: var(--bg-color);
+    height: 100%;
     width: 100%;
     position: absolute;
     z-index: -1;
     
-    @include desktop-screen {
-
-    }
 }
