@@ -1,6 +1,10 @@
 .primary {
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     @include desktop-screen {
         grid-area: primary;
@@ -9,12 +13,14 @@
     }
 
     &__title {
-        font-size: 2em;
+        font-size: 1.7em;
         font-weight: 400;
         line-height: .5em;
+        margin: 10px;
 
         @include tablet-screen {
             font-size: 3.5em;
+            margin: 20px;
         }
 
         @include desktop-screen {
@@ -35,13 +41,20 @@
         color: #636363;
         margin-bottom: 60px;
 
+        @include tablet-screen {
+            font-size: 1.1em;
+            width: 70%;
+            text-align: center;
+        }
+
         @include desktop-screen {
             font-size: 1.1em;
+            width: auto;
         }
     }
 
     &__cta {
-        font-size: 1em;
+        font-size: .8em;
         color: var(--light-color);
         border-radius: 0px 15px 15px 15px;
         text-decoration: none;
@@ -49,13 +62,13 @@
         text-transform: uppercase;
         border: 2px solid var(--accent-color);
         display: block;
-        padding: 15px 60px;
+        padding: 15px 50px;
         letter-spacing: 1px;
         font-weight: bold;
         display: inline-block;
 
-       @include desktop-screen {
-           display: inline-block;
+       @include tablet-screen {
+           font-size: 1em;
        } 
     }
 }
