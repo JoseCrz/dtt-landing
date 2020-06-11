@@ -40,16 +40,19 @@
         line-height: 1.3em;
         color: #636363;
         margin-bottom: 60px;
+        max-width: 400px;
 
         @include tablet-screen {
             font-size: 1.1em;
             width: 70%;
             text-align: center;
+            max-width: 900px;
         }
 
         @include desktop-screen {
             font-size: 1.1em;
             width: auto;
+            max-width: 1000px;
         }
     }
 
