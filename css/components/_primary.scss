@@ -13,6 +13,10 @@
         font-weight: 400;
         line-height: .5em;
 
+        @include tablet-screen {
+            font-size: 3.5em;
+        }
+
         @include desktop-screen {
             font-size: 5.1em;
             line-height: 1em;
@@ -48,6 +52,7 @@
         padding: 15px 60px;
         letter-spacing: 1px;
         font-weight: bold;
+        display: inline-block;
 
        @include desktop-screen {
            display: inline-block;
