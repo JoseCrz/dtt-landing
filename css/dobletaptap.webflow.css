@@ -61,6 +61,7 @@ body {
 .card__title {
   color: #000;
   font-size: 62px;
+  line-height: 150%;
   text-align: center;
 }
 
@@ -73,4 +74,27 @@ body {
   margin-top: 30px;
   color: #999;
   font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .hero--card {
+    margin-right: 18px;
+    margin-left: 18px;
+    padding: 40px 22px;
+  }
+  .card__title {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero--card {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .card__title {
+    font-size: 38px;
+  }
 }
