@@ -76,6 +76,24 @@ body {
   font-weight: 700;
 }
 
+.hero__title {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1581e5), color-stop(52%, #756ac3), to(#e60053));
+  background-image: linear-gradient(90deg, #1581e5, #756ac3 52%, #e60053);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__paragraph {
+  color: #8a8a8a;
+}
+
+@media screen and (max-width: 991px) {
+  .hero__title {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero--card {
     margin-right: 18px;
@@ -96,5 +114,19 @@ body {
   }
   .card__title {
     font-size: 38px;
+  }
+  .hero__title {
+    max-width: 400px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1581e5), color-stop(52%, #756ac3), to(#e60053));
+    background-image: linear-gradient(180deg, #1581e5, #756ac3 52%, #e60053);
+    text-align: left;
+  }
+  .hero__paragraph {
+    max-width: 400px;
+    padding-right: 100px;
+    padding-left: 40px;
+    text-align: left;
   }
 }
