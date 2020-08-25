@@ -77,8 +77,14 @@ body {
 }
 
 .hero__title {
+  max-width: 700px;
+  margin-top: 0px;
+  padding-bottom: 10px;
   background-image: -webkit-gradient(linear, left top, right top, from(#1581e5), color-stop(52%, #756ac3), to(#e60053));
   background-image: linear-gradient(90deg, #1581e5, #756ac3 52%, #e60053);
+  font-size: 54px;
+  line-height: 1.1;
+  text-align: center;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -86,6 +92,7 @@ body {
 
 .hero__paragraph {
   color: #8a8a8a;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 991px) {
@@ -103,9 +110,19 @@ body {
   .card__title {
     font-size: 54px;
   }
+  .hero__title {
+    max-width: 480px;
+    font-size: 38px;
+  }
 }
 
 @media screen and (max-width: 479px) {
+  .hero {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
   .hero--card {
     margin-right: 20px;
     margin-left: 20px;
@@ -116,17 +133,16 @@ body {
     font-size: 38px;
   }
   .hero__title {
-    max-width: 400px;
-    padding-right: 40px;
-    padding-left: 40px;
+    max-width: 480px;
+    padding-right: 14px;
+    padding-left: 14px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#1581e5), color-stop(52%, #756ac3), to(#e60053));
     background-image: linear-gradient(180deg, #1581e5, #756ac3 52%, #e60053);
     text-align: left;
   }
   .hero__paragraph {
-    max-width: 400px;
-    padding-right: 100px;
-    padding-left: 40px;
+    padding-right: 14px;
+    padding-left: 14px;
     text-align: left;
   }
 }
